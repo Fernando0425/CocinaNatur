@@ -1,4 +1,5 @@
 <?php include "layouts/header.php"; ?>
+<?php session_start(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -13,6 +14,9 @@
     <div class="box">
         <img src="images/inicio.png">
     </div>
-    
+
+    <div class="recetspace">
+    <?php include "layouts/recet.php"; ?>
+    </div>
 </body>
 </html>

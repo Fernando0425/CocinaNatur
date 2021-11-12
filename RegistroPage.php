@@ -10,18 +10,18 @@
 </head>
 <body>
   <div class="Registro">
-    <form>
+    <form action ="./Controllers/register_user.php" method="post">
       <h2>Registrarse</h2>
-      <p>Nombre<input type="text"></p>
-      <p>Correo Electronico<input type="text"></p>
-      <p>Contraseña<input type="password"></p>
-      <p>Confirmar Contraseña<input type="password"></p>
-    </form>
+      <p>Nombre<input type="text" name="Nombre"></p>
+      <p>Correo Electronico<input type="text" name="Correo"></p>
+      <p>Contraseña<input type="password" name="Contrasena"></p>
+      <p>Confirmar Contraseña<input type="password" name="Confirm"></p>
+    
   </div>
-
   <div class ="Boton">
-    <a href="./index.php"><input type="submit" class="submit" value="Atras"></a>
     <input type="submit" class="submit" value="Registrarse">
+    </form>
+    <a href="./index.php"><input type="submit" class="submit" value="Atras"></a>
   </div>
 
 </body>
