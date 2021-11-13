@@ -1,4 +1,3 @@
-<!--<?php include "layouts/header.php"; ?><style type="text/css"> -->
 <!DOCTYPE html>
 <html lang="en">
 <link rel="stylesheet" type="text/css" href="CSS/CSS.css">
@@ -9,20 +8,21 @@
   <title>Registro</title>
 </head>
 <body>
-  <div class="Registro">
-    <form action ="./Controllers/register_user.php" method="post">
-      <h2>Registrarse</h2>
-      <p>Nombre<input type="text" name="Nombre"></p>
-      <p>Correo Electronico<input type="text" name="Correo"></p>
-      <p>Contraseña<input type="password" name="Contrasena"></p>
-      <p>Confirmar Contraseña<input type="password" name="Confirm"></p>
-    
+  <div class="fondo">
+    <div class="Registro">
+      <form action ="./Controllers/register_user.php" method="post">
+        <h2>Registrarse</h2>
+        <p>Nombre<input type="text" name="Nombre"></p>
+        <p>Correo Electronico<input type="text" name="Correo"></p>
+        <p>Contraseña<input type="password" name="Contrasena"></p>
+        <p>Confirmar Contraseña<input type="password" name="Confirm"></p>
+      
+    </div>
+    <div class ="Boton">
+      <input type="submit" class="submit" value="Registrarse">
+      </form>
+      <a href="./index.php"><input type="submit" class="submit" value="Atras"></a>
+    </div>
   </div>
-  <div class ="Boton">
-    <input type="submit" class="submit" value="Registrarse">
-    </form>
-    <a href="./index.php"><input type="submit" class="submit" value="Atras"></a>
-  </div>
-
 </body>
 </html>

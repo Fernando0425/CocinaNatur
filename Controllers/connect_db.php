@@ -1,9 +1,7 @@
 <?php
-
-
 //creacion de conexion al servidor
 
-$conexion= mysqli_connect("localhost","root","","cocina_nature",3306);
+$conexion= mysqli_connect("localhost","root","","cocina_natur",3306);
 
 //validar conexion
 if($conexion-> connect_errno)

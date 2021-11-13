@@ -1,11 +1,5 @@
 <?php
-//creacion de conexion al servidor
-$conexion= mysqli_connect("localhost","root","","cocina_nature",3306);
-//validar conexion
-if(!$conexion)
-{
-  die("Conexion fallida al servidor".mysqli_connect_error());
-}
+require 'connect_db.php';
 
 $sql="Insert into usuario (nombre_usuario,correo_usuario,contrasena_usuario) values ('".$_POST['Nombre']."','".$_POST['Correo']."','".$_POST['Contrasena']."') " ;
 

@@ -27,9 +27,8 @@
             <a href="#" class="logo nav-link"><img src="images/perfil.png"></a>
               <ul class="submenu">
 						    <li><a href="#">Mi perfil</a></li>
-						    <li><a href="#">Chat</a></li>
-						    <li><a href="#">Mis recetas</a></li>
-                <li><a href="#">Configuración</a></li>
+						    <li><a href="MisRecetas.php">Mis recetas</a></li>
+                <li><a href="#">Comentarios</a></li>
                 <li><a href="./Controllers/desconectar.php">Cerrar Sesión</a></li>
 					    </ul>
               <i class="fas fa-bars"></i>

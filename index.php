@@ -8,19 +8,20 @@
   <title>Inicio Sesión</title>
 </head>
 <body>
-  <div class="InicioSesion">
-    <form action="./Controllers/user.php" method="post">
-      <h2>Iniciar sesion</h2>
-      <p>Correo<input type="text" name="Correo"></p>
-      <p>Contraseña<input type="password" name="Contrasena"></p>
-    
-  </div>
+  <div class="fondo">
+    <div class="InicioSesion">
+      <form action="./Controllers/user.php" method="post">
+        <h2>Iniciar sesion</h2>
+        <p>Correo<input type="text" name="Correo"></p>
+        <p>Contraseña<input type="password" name="Contrasena"></p>
+      
+    </div>
 
-  <div class ="Boton">
-    <input type="submit" class="submit" value="Entrar">
-     </form>
-    <a href="./RegistroPage.php"><input type="submit" class="submit" value="Registrarse" ></a>
+    <div class ="Boton">
+      <input type="submit" class="submit" value="Entrar">
+      </form>
+      <a href="./RegistroPage.php"><input type="submit" class="submit" value="Registrarse" ></a>
+    </div>
   </div>
-
 </body>
 </html>
