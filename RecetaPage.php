@@ -22,6 +22,12 @@
     $query = mysqli_query($conexion,$consultar);
     $array = mysqli_fetch_array($query);
 
+    if($_SESSION['id_usuario'] == $id){
+        $permiso = "bock";
+    }else{
+        $permiso = "none";
+    }
+
 ?>
 
 <!DOCTYPE html>
@@ -47,6 +53,9 @@
 
         <div class="editar"style="display:<?php echo $permiso;?>;">
             <a href="EditarReceta.php?id=<?php echo $id_receta?>"><input type="submit" value="Editar"></a>
+        </div>
+        <div class="eliminar"style="display:<?php echo $permiso;?>;">
+            <a href="./Controllers/EliminarReceta.php?id=<?php echo $id_receta?>"><input type="submit" value="Eliminar"></a>
         </div>
 
         <div class="comentarios">

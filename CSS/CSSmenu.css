@@ -87,6 +87,7 @@
     margin: 10px;
     color: rgb(0, 0, 0);
     /*border-bottom: 1px solid #ffc5c5;*/
+    display: inline-block;
 }
 /* Submenu*/
 
@@ -97,6 +98,7 @@
 	visibility: hidden;
 	opacity: 0;
 	transition: opacity 1.5s;
+  margin-right: 0px;
 }
 
 .submenu li a{

@@ -69,6 +69,11 @@ body{
     border-radius: 20px;
     
 }
+
+.perfil{
+    height: 80px;
+    width: auto;
+}
 /*TEXTO*/
 
 .encabezado #NR{
@@ -121,6 +126,23 @@ body{
 }
 .editar input:hover {
     background-color: #e089d9; /* Green */
+    color: white;
+}
+
+.eliminar input{
+    float: left;
+    border-radius: 20px;
+    width: 80px;
+    padding: 10px;
+    text-align: center;
+    background: #eb4242;
+    color: rgb(0, 0, 0);
+    font-size: 15px;
+    cursor: pointer;
+    
+}
+.eliminar input:hover {
+    background-color: #ec2c2c; /* Green */
     color: white;
 }
 

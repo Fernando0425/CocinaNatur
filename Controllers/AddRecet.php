@@ -16,6 +16,6 @@ if($result)
 mysqli_close($conexion);
 
 ob_start();
-header("refresh:2,url=../MisRecetas.php");
+header("refresh:1,url=../MisRecetas.php");
 ob_end_flush();
  ?>

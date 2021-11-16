@@ -20,13 +20,14 @@
           <li class="nav-menu-item">
             <a href="#" class="nav-menu-link nav-link">Menu</a>
           </li>
-          <li class="nav-menu-item">
-            <input type="text" name="Buscar" placeholder="Buscar">
+          <li class="nav-menu-item"style="margin-right: 100px">
+            <input type="text" name="Buscar" placeholder="Buscar" id="buscar">
+            <a onclick="buscar()"><img src="images/busqueda.png"width="50" height="50" style="position: absolute;margin-top: 15px;"></a>
           </li>
           <li class="nav-menu-item">
             <a href="#" class="logo nav-link"><img src="images/perfil.png"></a>
               <ul class="submenu">
-						    <li><a href="#">Mi perfil</a></li>
+						    <li><a href="Perfil.php">Mi perfil</a></li>
 						    <li><a href="MisRecetas.php">Mis recetas</a></li>
                 <li><a href="#">Comentarios</a></li>
                 <li><a href="./Controllers/desconectar.php">Cerrar Sesión</a></li>
@@ -39,3 +40,10 @@
     </header>
 </body>
 </html>
+
+<script>
+function buscar(){
+  var busqueda = document.getElementById("buscar").value;
+  window.location.href="./Busqueda.php?busqueda="+busqueda;
+}
+</script>

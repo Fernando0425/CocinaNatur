@@ -16,6 +16,6 @@ if($result)
 mysqli_close($conexion);
 
 ob_start();
-header("refresh:2,url=../RecetaPage.php?id=".$_POST['id_receta']."");
+header("refresh:1,url=../RecetaPage.php?id=".$_POST['id_receta']."");
 ob_end_flush();
  ?>
