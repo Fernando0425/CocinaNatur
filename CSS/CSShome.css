@@ -6,12 +6,210 @@ body{
     width: auto;
 }
 
+.container{
+  background-color: #F7D7CD;
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+}
+
+.quien{
+  width: 100%;
+}
+
+.quien #titulo{
+    text-align: center;
+    font-family: "Intro Script";
+    font-size: 40px;
+    padding: 12px;
+    color: #737373;
+}
+
+.quien p{
+    text-align: center;
+    font-family: "Open Sans Light";
+    font-size: 21px;
+    padding: 12px;
+    color: black;
+    font-weight: bold;
+}
+
+.objetivo-container{
+  width: 100%;
+}
+
+.objetivo{
+  margin-top: 50px;
+  background-color: #ffffff;
+  max-width: 100%;
+  height: auto;
+  width: 30%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.titulos{
+  text-align: center;
+  font-family: "Open Sans";
+  font-size: 29px;
+  padding: 12px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.texto{
+  text-align: center;
+  font-family: "Open Sans Light";
+  font-size: 21px;
+  padding: 12px;
+  color: black;
+}
+
+
+.MV-container{
+  margin-top: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+.mision{
+  background-color: #ffffff;
+  max-width: 100%;
+  height: auto;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vision{
+  background-color: #ffffff;
+  max-width: 100%;
+  height: auto;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.abajo{
+  background-color: #FCCBBC;
+  border-radius: 20px;
+  max-width: 100%;
+  height: auto;
+  width: auto;
+  display: flex;
+  justify-content: center;
+}
+.menu{
+  width: 100%;
+}
+.menu p{
+  text-align: center;
+  font: "Lobster";
+  font-style: italic;
+  font-size: 40px;
+  padding: 12px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.contactos{
+  max-width: 100%;
+  height: auto;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactos p{
+  text-align: center;
+  font: "Open Sans";
+  font-size: 26px;
+  padding: 12px;
+  color: #737373;
+  font-weight: bold;
+  font-style: italic;
+}
+
+.text{
+  margin-top: 10px;
+  background-color: #F7D7CD;
+  border-radius: 20px;
+  height: auto;
+  text-align: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.redes{
+  max-width: 100%;
+  height: auto;
+  width: 35%;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
+  align-items: center;
+}
+
+.redes p{
+  text-align: center;
+  font: "Open Sans";
+  font-size: 26px;
+  padding: 12px;
+  color: #737373;
+  font-weight: bold;
+  font-style: italic;
+}
+.fake-textarea {
+  background-color: white;
+  border: 1px solid black;
+  width: 100%;
+  padding: 1px;
+  min-height: 100px;
+  border-radius: 20px;
+  padding: 8px 8px;
+}
+
+.contactos input{
+  border-radius: 20px;
+  width: 150px;
+  padding: 10px;
+  text-align: center;
+  background: #F7D7CD;
+  color: rgb(0, 0, 0);
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.contactos input:hover {
+  background-color: #e089d9; /* Green */
+  color: white;
+}
+
+.fake-textarea:empty::before {
+  position: absolute;
+  content: "Escribe aquí...";
+}
+
+.redes img{
+  display:block;
+  margin:auto;
+}
+#foot{
+  color: white;
+}
+
 .recetspace{
   background-color: white;
   border-radius: 20px;
   max-width: 100%;
   height: auto;
   width: auto;
+  text-align: center;
   }
 
 .box img{

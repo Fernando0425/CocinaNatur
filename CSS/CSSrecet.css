@@ -16,6 +16,7 @@
     word-wrap:break-word;
     border-radius: 20px;
     display: inline-table;
+    justify-content: center;
 }
 .recet p{
     vertical-align: text-bottom;
