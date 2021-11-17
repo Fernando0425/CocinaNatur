@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 17-11-2021 a las 11:21:42
+-- Tiempo de generación: 17-11-2021 a las 11:31:13
 -- Versión del servidor: 10.4.21-MariaDB
 -- Versión de PHP: 8.0.12
 
@@ -43,6 +43,25 @@ INSERT INTO `comentarios_receta` (`id_receta`, `id_usuario`, `nombre_usuario`, `
 (1, 2, 'Fernando Herrera', 'Hola, Excelente receta '),
 (1, 5, 'Leonor', 'Hola, muy buena receta, me gustó mucho y tambien a mi familia, gracias, saludos'),
 (3, 5, 'Leonor', 'Hola, Excelente receta ');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `favoritos_usuario`
+--
+
+CREATE TABLE `favoritos_usuario` (
+  `id_usuario` int(11) NOT NULL,
+  `id_receta` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `favoritos_usuario`
+--
+
+INSERT INTO `favoritos_usuario` (`id_usuario`, `id_receta`) VALUES
+(5, 3),
+(5, 1);
 
 -- --------------------------------------------------------
 
