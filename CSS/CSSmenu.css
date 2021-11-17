@@ -117,3 +117,35 @@
 	visibility: visible;
 	opacity: 1;
 }
+
+/*Categorias*/
+.categorias{
+	position: absolute;
+	background: #FCCBBC;
+	width: 200%;
+	visibility: hidden;
+	opacity: 0;
+	transition: opacity 1.5s;
+  margin-right: 0px;
+}
+
+.categorias li a{
+	display: flex;
+	padding: 1px;
+	color: rgb(0, 0, 0);
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;;
+	text-decoration: none;
+}
+.categorias li a:hover{
+	color: #f3b39f;
+	transition: all .3s;
+}
+
+.nav li:hover .categorias{
+	visibility: visible;
+	opacity: 1;
+}
+
+ul{
+  list-style-type: none;
+}

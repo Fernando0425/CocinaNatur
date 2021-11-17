@@ -2,7 +2,7 @@
 require 'connect_db.php';
 session_start();
 
-$sql="INSERT INTO comentarios_receta (id_receta, comentarios_comentario, id_usuario) VALUES('$_POST[id_receta]','$_POST[comentario]','$_SESSION[id_usuario]')"  ;
+$sql="INSERT INTO comentarios_receta (id_receta, id_usuario, nombre_usuario , comentarios_comentario) VALUES('$_POST[id_receta]','$_SESSION[id_usuario]','$_SESSION[nombre_usuario]','$_POST[comentario]')"  ;
 
 $result=mysqli_query($conexion, $sql);
 

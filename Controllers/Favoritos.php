@@ -1,13 +1,13 @@
 <?php
 require 'connect_db.php';
+session_start();
 
-$sql="INSERT INTO usuario (nombre_usuario,correo_usuario,contrasena_usuario) values ('".$_POST['Nombre']."','".$_POST['Correo']."','".$_POST['Contrasena']."') " ;
+$sql="Insert into favoritos_usuario (id_usuario, id_receta) values ('".$_SESSION['id_usuario']."','".$_GET['id']."')" ;
 
 $result=mysqli_query($conexion, $sql);
 
 if($result)
 {
-  echo "Registo exitoso";
 }else
 {
     echo "Error de registro" .$sql . "<br>" .mysqli_error($conexion);
@@ -15,6 +15,6 @@ if($result)
 mysqli_close($conexion);
 
 ob_start();
-header("refresh:1,url=../index.php");
+header("refresh:1,url=../RecetaPage.php?id=".$_GET['id']."");
 ob_end_flush();
  ?>

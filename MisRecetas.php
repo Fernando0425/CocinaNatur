@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" href="CSS/CSSrecet.css">
     <title>Mis Receta</title>
 </head>
-<body>
+<body class="body">
 
     <div class="resetspace">
         <a href="AñadirReceta.php"><div class="recet">

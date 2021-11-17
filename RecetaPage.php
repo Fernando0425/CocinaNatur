@@ -13,10 +13,32 @@
         $nombre = $row['nombre_receta'];
         $tiempo = $row['tiempo_receta'];
         $dificultad = $row['dificultad_receta'];
-        $calificacion =$row['calificacion_receta'];
+        $categoria =$row['tipo_receta'];
         $ingredientes = $row['ingredientes_receta'];
         $pasos = $row['pasos_receta'];
     }
+    
+    $consultar = "SELECT * FROM favoritos_usuario WHERE id_usuario ='$_SESSION[id_usuario]'";
+    $query = mysqli_query($conexion,$consultar);
+    $array = mysqli_fetch_array($query);
+    if(empty($array)){
+            $favAgregar = "bock";
+            $favEliminar = "none";
+    }else{
+        foreach($query as $row){
+        $id_rece = $row['id_receta'];
+
+        if($id_rece ==  $_GET['id']){
+            $favAgregar = "none";
+            $favEliminar = "bock";
+            break;
+        }else{
+            $favAgregar = "bock";
+            $favEliminar = "none";
+        }
+    }
+    }
+    
 
     $consultar = "SELECT * FROM comentarios_receta WHERE id_receta='$id_receta'";
     $query = mysqli_query($conexion,$consultar);
@@ -24,9 +46,13 @@
 
     if($_SESSION['id_usuario'] == $id){
         $permiso = "bock";
+        $favAgregar = "none";
+        $favEliminar = "none";
     }else{
         $permiso = "none";
     }
+
+    
 
 ?>
 
@@ -48,7 +74,7 @@
             <p id="NR"><?php echo $nombre;?></p><br>
             <p id="TR">Tiempo de preparacion: <?php echo $tiempo;?></p>
             <p id="TR">Dificultad: <?php echo $dificultad;?></p>
-            <p id="TR">Calificacion: <?php echo $calificacion;?></p>
+            <p id="TR">Categoria: <?php echo $categoria;?></p>
         </div>
 
         <div class="editar"style="display:<?php echo $permiso;?>;">
@@ -57,12 +83,21 @@
         <div class="eliminar"style="display:<?php echo $permiso;?>;">
             <a href="./Controllers/EliminarReceta.php?id=<?php echo $id_receta?>"><input type="submit" value="Eliminar"></a>
         </div>
+        <div class="fav"style="display:<?php echo $favAgregar;?>;">
+            <a href="./Controllers/Favoritos.php?id=<?php echo $id_receta?>"><input type="submit" value="Favoritos"></a>
+        </div>
+        <div class="fav-eliminar"style="display:<?php echo $favEliminar;?>;">
+            <a href="./Controllers/EliminarFavoritos.php?id=<?php echo $id_receta?>"><input type="submit" value="Eliminar de Favoritos"></a>
+        </div>
 
         <div class="comentarios">
             <p id="coment">Comentarios</p>
             <?php foreach($query as $row){ ?>
                 <div class="perfil"><img src="images/perfil.png">
-                    <div class="com"><p><?php echo $row['comentarios_comentario']?></p></div>
+                    <div class="com">
+                        <p id="nombres"><?php echo $row['nombre_usuario']?></p>
+                        <p><?php echo $row['comentarios_comentario']?></p>
+                    </div>
                 </div>
             <?php } ?>
             <form action="./Controllers/Coment_recet.php" method="post">

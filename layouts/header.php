@@ -18,7 +18,18 @@
             <a href="Home.php" class="nav-menu-link nav-link">Inicio</a>
           </li>
           <li class="nav-menu-item">
-            <a href="#" class="nav-menu-link nav-link">Menu</a>
+            <a href="#" class="nav-menu-link nav-link">Categorias</a>
+            <ul class="categorias">
+						    <li><a href="Categoria.php?cate=Comida Mexicana">Comida Mexicana</a></li>
+						    <li><a href="Categoria.php?cate=Vegetariana">Vegetariana</a></li>
+                <li><a href="Categoria.php?cate=Niños">Niños</a></li>
+                <li><a href="Categoria.php?cate=Postres">Postres</a></li>
+                <li><a href="Categoria.php?cate=Bebidas">Bebidas</a></li>
+                <li><a href="Categoria.php?cate=Desayunos">Desayunos</a></li>
+                <li><a href="Categoria.php?cate=Cenas">Cenas</a></li>
+                <li><a href="Categoria.php?cate=Oriental">Oriental</a></li>
+                <li><a href="Categoria.php?cate=Otros">Otros</a></li>
+					    </ul>
           </li>
           <li class="nav-menu-item"style="margin-right: 100px">
             <input type="text" name="Buscar" placeholder="Buscar" id="buscar">
@@ -29,7 +40,7 @@
               <ul class="submenu">
 						    <li><a href="Perfil.php">Mi perfil</a></li>
 						    <li><a href="MisRecetas.php">Mis recetas</a></li>
-                <li><a href="#">Comentarios</a></li>
+                <li><a href="Favoritos.php">Mis favoritos</a></li>
                 <li><a href="./Controllers/desconectar.php">Cerrar Sesión</a></li>
 					    </ul>
               <i class="fas fa-bars"></i>

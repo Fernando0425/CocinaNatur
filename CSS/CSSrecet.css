@@ -1,14 +1,21 @@
-*{
-    margin:0;
-    padding:0;
-    font-family: sans-serif;
+.body{
+    background-color: #f7d7cd;
+}
+.resetspace{
+    margin: 15px;
+    background-color: white;
+    border-radius: 20px;
+    max-width: 100%;
+    height: 1000px;
+    width: 100%;
+    max-height: auto;
 }
 
 .recet{
     border: 1px solid;
     height: 180px; 
     width: 200px;
-    margin:10px; 
+    margin:20px; 
     background-color:rgb(255, 255, 255);
     font-size: 20px;
     text-align:center;
@@ -16,7 +23,6 @@
     word-wrap:break-word;
     border-radius: 20px;
     display: inline-table;
-    justify-content: center;
 }
 .recet p{
     vertical-align: text-bottom;
@@ -46,4 +52,11 @@ a:hover{
 .boton1{
     border: none;
     outline:none;
+}
+
+#titulo{
+    text-align: center;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 40px;
+    padding: 15px;
 }

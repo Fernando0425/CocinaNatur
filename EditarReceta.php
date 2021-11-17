@@ -37,6 +37,7 @@
             <p>Nombre de la receta: </p>
             <p>Tiempo de preparacion: </p>
             <p>Dificultad: </p>
+            <p>Categoria: </p>
         </div>
         
         <div class="inp">
@@ -46,6 +47,17 @@
                 <option value="Facil">Facil</option>
                 <option value="Intermedio">Intermedio</option>
                 <option value="Dificil">Dificil</option>
+            </select>
+            <select name="categoria">
+                <option value="Comida Mexicana">Comida Mexicana</option>
+                <option value="Vegetariana">Vegetariana</option>
+                <option value="Niños">Niños</option>
+                <option value="Postres">Postres</option>
+                <option value="Bebidas">Bebidas</option>
+                <option value="Desayunos">Desayunos</option>
+                <option value="Cenas">Cenas</option>
+                <option value="Oriental">Oriental</option>
+                <option value="Otros">Otros</option>
             </select>
         </div>
     </div>
